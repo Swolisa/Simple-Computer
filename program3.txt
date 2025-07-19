@@ -1,0 +1,46 @@
+;Noah Brown
+;OLA7
+;section 001
+JMP start
+num1: 2       ; variables defined
+num2: a
+num3: 3
+sum:  0       ; initialize sum
+count: 1      ; intialize count
+divisor: 3    ; set divisor for 3
+
+start:
+LDAC num1     ; Load the first variable
+MVAC          ; Move it to R register 
+CLAC
+LDAC num2  ;load next value into acc register
+ADD
+MVAC    ;move result into R
+CLAC    ;clear acc register
+LDAC num3   ;load last value into acc
+ADD
+
+STAC sum  ;move sum into allocated memory
+CLAC
+
+LDAC divisor    ;loads divisor into acc
+MVAC    ;moves divisor into R
+CLAC
+
+d_loop:  ;sets loop point
+LDAC sum    ;loads sum into acc
+SUB
+STAC sum    ;loads sum into memory space
+JMPZ END   ;if acc == 0 ends loop
+
+CLAC
+LDAC count
+INC 
+STAC count  ;loads count, increments, and moves it back
+CLAC
+JMP d_loop  ;resets loop
+
+END:
+LDAC count  ;loads loop to be outputted
+OUT
+HALT
