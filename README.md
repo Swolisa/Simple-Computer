@@ -35,8 +35,11 @@ Logisim-Evolution v3.8.0+
 - Example Program (program1.txt)
   ; Subtract two values
   JMP start
+  
   var1: A
+  
   var2: F
+  
   start:
   LDAC var1    ; Load 0xA
   MVAC         ; Move to R
