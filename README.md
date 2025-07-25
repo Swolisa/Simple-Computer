@@ -41,11 +41,17 @@ Logisim-Evolution v3.8.0+
   var2: F
   
   start:
+  
   LDAC var1    ; Load 0xA
+  
   MVAC         ; Move to R
+  
   LDAC var2    ; Load 0xF
+  
   SUB          ; A - F = -5 (0xFB)
+  
   OUT
+  
   HALT
 
   Expected output: 0xFB (shown on output register
