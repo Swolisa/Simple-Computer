@@ -21,13 +21,9 @@ Logisim-Evolution v3.8.0+
 ### Steps
 
 1. Clone the repositiory
-   '''bash
    git clone https://github.com/Swolisa/Simple-Computer.git
-   '''
 2. Open in Logisim-Evolution:
-   '''bash
    File -> Open -> Select RSC.circ
-   '''
 
 ### Usage
 - Running Progrms
@@ -37,7 +33,6 @@ Logisim-Evolution v3.8.0+
      - Ctrl+T : Continous clock
      - Ctrl+R : Reset
 - Example Program (program1.txt)
-  '''bash
   ; Subtract two values
   JMP start
   var1: A
@@ -49,7 +44,7 @@ Logisim-Evolution v3.8.0+
   SUB         ; A - F = -5 (0xFB)
   OUT
   HALT
-  '''
+
   Expected output: 0xFB (shown on output register
   Full programs:
   - program2.txt (advanced arthrimetic/logic)
