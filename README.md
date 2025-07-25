@@ -1,4 +1,4 @@
-#Simple-Computer Simulator
+# Simple-Computer Simulator
 
 A modular, educational computer architecture built in Logisim-Evolution.
 
